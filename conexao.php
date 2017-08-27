@@ -4,7 +4,7 @@ $usuario = "root";
 $senha = "";
 $banco = "bdlogin";
 
-$dbcon = new MySQLi("$host","$usuario","$senha","$banco");
+$dbcon = new mysqli("$host","$usuario","$senha","$banco");
 
 if($dbcon->connect_error){
     echo "Erro de Conexão";
